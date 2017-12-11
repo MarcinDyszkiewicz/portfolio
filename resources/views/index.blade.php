@@ -8,7 +8,7 @@
         <meta name="keywords" content="web developer, full stack, backend">
         <meta name="author" content="Marcin Dyszkiewicz">
 
-        <title>Marcin Dyszkiewicz Web Developer | Welcome</title>
+        <title>Marcin Dyszkiewicz Web Developer @section('title', '| Home')</title>
 
         {{--boostrap--}}
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -29,10 +29,10 @@
           </div>
             <nav>
               <ul>
-                  <li id="home"><a href="index.html">Home</a></li>
-                  <li id="projects"><a href="projects.html">Projects</a></li>
-                  <li id="about"><a href="about.html">About</a></li>
-                  <li id="contact"><a href="contact.html">Contact</a></li>
+                  <li id="home"><a href="{{route('index')}}">Home</a></li>
+                  <li id="portfolio"><a href="{{route('portfolio')}}">Projects</a></li>
+                  <li id="about"><a href="{{route('about')}}">About</a></li>
+                  <li id="contact"><a href="{{route('contact')}}">Contact</a></li>
               </ul>
             </nav>
         </div>
@@ -47,6 +47,7 @@
 
       <section id="boxes">
         <div class="container">
+            <table>
           <div class="box">
               <img src="img/php.png" alt="">
               <h3>PHP</h3>
@@ -67,6 +68,7 @@
               <img src="img/js.jpg" alt="">
               <h3>JAVASCRIPT</h3>
           </div>
+            </table>
         </div>
 
       </section>
@@ -84,12 +86,20 @@
     switch(pathname) {
     case "/" :
     console.log("welcome");
-    var home = document.querySelector("#home");
-    home.classList.toggle("current");
+        var home = document.querySelector("#home");
+        home.classList.toggle("current");
     break;
-    case "/game" :
-    console.log("game");
+    case "/portfolio" :
+        var portfolio = document.querySelector("#portfolio");
+        portfolio.classList.toggle("current");
     break;
+    case "/about":
+        var about = document.querySelector("#about");
+        about.classList.toggle("current");
+        break;
+    case '/contact':
+        var contact = document.querySelector("#contact");
+        contact.classList.toggle("current");
     }
     </script>
 {{--<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>--}}
