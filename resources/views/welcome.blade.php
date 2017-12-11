@@ -16,20 +16,23 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         {{--css styles--}}
         <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
+        <style>
+
+        </style>
     </head>
 
     <body>
       <header>
         <div class="container">
           <div id="branding">
-              <h1>Marcin Dyszkiewicz Web Developer</h1>
+              <h1>Marcin Dyszkiewicz <span class="highlight">Web Developer</span></h1>
           </div>
             <nav>
               <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="projects.html">Projects</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                  <li id="home"><a href="index.html">Home</a></li>
+                  <li id="projects"><a href="projects.html">Projects</a></li>
+                  <li id="about"><a href="about.html">About</a></li>
+                  <li id="contact"><a href="contact.html">Contact</a></li>
               </ul>
             </nav>
         </div>
@@ -75,6 +78,20 @@
     </footer>
     </body>
 
+    <script>
+
+    var pathname = window.location.pathname;
+    switch(pathname) {
+    case "/" :
+    console.log("welcome");
+    var home = document.querySelector("#home");
+    home.classList.toggle("current");
+    break;
+    case "/game" :
+    console.log("game");
+    break;
+    }
+    </script>
 {{--<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>--}}
 {{--<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>--}}
 {{--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>--}}
