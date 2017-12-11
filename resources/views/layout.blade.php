@@ -4,22 +4,23 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Full stack web developer">
+    <meta name="keywords" content="web developer, full stack, backend">
+    <meta name="author" content="Marcin Dyszkiewicz">
 
+    <title>Marcin Dyszkiewicz Web Developer | Welcome</title>
+
+   {{--boostrap--}}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-
-    <title>Tasks Calendar</title>
-
-    <!-- Fonts -->
+    {{--fonts--}}
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
     {{--css styles--}}
-    <styles></styles>
+    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
 </head>
 
 
 <body>
 
-@include('partials._messages')
 
 
 
