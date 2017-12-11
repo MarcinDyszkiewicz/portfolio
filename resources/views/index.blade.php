@@ -13,7 +13,7 @@
         {{--boostrap--}}
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         {{--fonts--}}
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
         {{--css styles--}}
         <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
         <style>
@@ -30,7 +30,7 @@
             <nav>
               <ul>
                   <li id="home"><a href="{{route('index')}}">Home</a></li>
-                  <li id="portfolio"><a href="{{route('portfolio')}}">Projects</a></li>
+                  <li id="portfolio"><a href="{{route('portfolio')}}">Portfolio</a></li>
                   <li id="about"><a href="{{route('about')}}">About</a></li>
                   <li id="contact"><a href="{{route('contact')}}">Contact</a></li>
               </ul>
@@ -41,15 +41,13 @@
       <section id="showcase">
         <div class="container">
             <h1>Full Stack Web Developer</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in malesuada nisi. Nam consectetur diam nec rhoncus ullamcorper. Fusce ac erat cursus, pulvinar diam non, egestas odio.</p>
         </div>
       </section>
 
       <section id="boxes">
         <div class="container">
-            <table>
           <div class="box">
-              <img src="img/php.png" alt="">
+              <img src="img/php2.png" alt="">
               <h3>PHP</h3>
           </div>
           <div class="box">
@@ -68,9 +66,7 @@
               <img src="img/js.jpg" alt="">
               <h3>JAVASCRIPT</h3>
           </div>
-            </table>
         </div>
-
       </section>
 
 

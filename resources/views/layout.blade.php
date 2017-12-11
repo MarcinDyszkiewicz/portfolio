@@ -41,7 +41,6 @@
 <section id="showcase">
     <div class="container">
         <h1>Full Stack Web Developer</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in malesuada nisi. Nam consectetur diam nec rhoncus ullamcorper. Fusce ac erat cursus, pulvinar diam non, egestas odio.</p>
     </div>
 </section>
 

@@ -67,9 +67,10 @@ header a:hover{
     border-bottom: #731C00 5px solid;
 }
 #showcase h1{
-    margin-top: 100px;
-    font-size: 55px;
+    margin-top: 170px;
+    font-size: 65px;
     margin-bottom: 10px;
+    font-family: 'Lobster';
 }
 
 #boxes{
@@ -83,10 +84,6 @@ header a:hover{
     padding: 10px;
 }
 #boxes .box img{
-    /*height: auto;*/
-    /*width: auto;*/
-    /*max-width: 200px;*/
-    /*max-height: 200px;*/
     width: 160px;
 }
 
@@ -97,4 +94,25 @@ footer{
     color: #FFFFFF;
     background-color: #0d3625;
     text-align: center;
+}
+
+/*media queries*/
+@media(max-width: 768px) {
+    header #branding,
+    header nav,
+    header nav li,
+    #boxes .box
+    {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header{
+        padding-bottom: 20px;
+    }
+
+    #showcase h1{
+        margin-top: 30px;
+    }
 }

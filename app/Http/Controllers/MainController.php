@@ -22,10 +22,10 @@ class MainController extends Controller
     }
 
 
-public function contact() {
+    public function contact() {
 
-    return view('contact');
-}
+        return view('contact');
+    }
 
 
 }
