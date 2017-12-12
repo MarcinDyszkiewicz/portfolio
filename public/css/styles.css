@@ -95,7 +95,7 @@ header a:hover{
     width: 160px;
 }
 
-
+/*contact page*/
 aside#sidebar{
     float: left;
     width: 30%;
@@ -107,6 +107,7 @@ aside#sidebar{
     width: 65%;
     margin-top: 40px;
 }
+
 
 
 
@@ -128,7 +129,10 @@ footer{
     header #branding,
     header nav,
     header nav li,
-    #boxes .box
+    #boxes .box,
+    aside#sidebar,
+    #main-col,
+    #flashMessage
     {
         float: none;
         text-align: center;

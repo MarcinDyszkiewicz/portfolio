@@ -29,14 +29,14 @@
                     <textarea id="message" name="message" class="form-control"></textarea>
                 </div>
 
-                <input type="submit" value="Send Message">
+                <input type="submit" class="submit" value="Send Message">
             </form>
         </div>
 
         <aside id="sidebar">
           <div class="dark">
             <h3>Marcin Dyszkiewicz</h3>
-            <p></p>
+            <p>sdfdfsdfsdfs</p>
           </div>
         </aside>
     </div>
