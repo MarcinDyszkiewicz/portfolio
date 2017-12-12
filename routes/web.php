@@ -21,3 +21,6 @@ Route::get('/about', 'MainController@about')->name('about');
 
 Route::get('/contact', 'MainController@contact')->name('contact');
 
+
+//contact form
+Route::post('/contact', 'MainController@contactPost')->name('contactPost');

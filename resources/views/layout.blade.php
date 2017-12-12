@@ -44,7 +44,7 @@
     </div>
 </section>
 
-@yield('section')
+@yield('content')
 
 
 
