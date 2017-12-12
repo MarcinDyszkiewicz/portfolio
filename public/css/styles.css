@@ -99,18 +99,24 @@ header a:hover{
 aside#sidebar{
     float: left;
     width: 30%;
-    margin-top: 50px;
+    margin-top: 70px;
     text-align: center;
 }
 #main-col{
     float: right;
     width: 65%;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 
+
+#flashMessage{
+    text-align: center;
+    margin-top: 20px;
+}
+
 footer{
-    padding:20px;
+    padding:10px;
     margin-top: 30px;
     color: #FFFFFF;
     background-color: #0d3625;

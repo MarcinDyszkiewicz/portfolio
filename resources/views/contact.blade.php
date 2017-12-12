@@ -11,6 +11,7 @@
             <h2>Contact Me</h2>
             <hr>
             <form action="{{ route('contactPost') }}" method="POST">
+                {{ csrf_field() }}
                 <div class="form-group">
                     <label name=name">Name:</label>
                     <input id="name" name="name" class="form-control">
@@ -25,9 +26,10 @@
                 </div>
                 <div class="form-group">
                     <label name=message">Message:</label>
-                    <input id="message" name="message" class="form-control">
+                    <textarea id="message" name="message" class="form-control"></textarea>
                 </div>
 
+                <input type="submit" value="Send Message">
             </form>
         </div>
 

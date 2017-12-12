@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests;
+use Illuminate\Support\Facades\Session;
 use Mail;
 
 class MainController extends Controller
@@ -30,13 +31,13 @@ class MainController extends Controller
     }
 
 
-    public function contactPost($request) {
+    public function contactPost(Request $request) {
 
         $this->validate($request, [
-            'name' => 'min 2',
+            'name' => 'min:2',
             'email' => 'required|email',
-            'subject' => 'min 3',
-            'message' => 'min 10'
+            'subject' => 'min:3',
+            'message' => 'min:10'
         ]);
 
         $data = array(
@@ -52,7 +53,8 @@ class MainController extends Controller
             $message->subject($data['subject']);
         });
 
-        return view('contact');
+        Session::flash('success', 'Thank You. Your Email was Sent');
+        return redirect()->route('contact');
     }
 
 }

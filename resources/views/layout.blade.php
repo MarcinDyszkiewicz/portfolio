@@ -44,9 +44,11 @@
     </div>
 </section>
 
+
+
 @yield('content')
 
-
+@include('partials._messages')
 
 <footer>
     <p>Marcin Dyszkiewicz Web Developer, Copyright &copy; 2017 </p>

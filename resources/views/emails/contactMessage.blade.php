@@ -1,11 +1,12 @@
-<h3>You Have a new contact via Portfolio page</h3>
+<h2>You Have a new contact via Portfolio page</h2>
 
-<h4>Name: $name</h4>
+<h2>Name: {{$name}}</h2>
 
-<h4>Subject: $subject</h4>
+<h2>Subject: {{$subject}}</h2>
 
-<h5>Email: $email</h5>
+<h4>Email: {{$email}}</h4>
 
-<h6>Message:</h6>
-<div>$bodyMessage</div>
+<div>Message:
+    <p>{{$bodyMessage}}</p>
 
+    </div>
