@@ -50,10 +50,13 @@
 
 @include('partials._messages')
 
+@yield('footer')
 <footer>
     <p>Marcin Dyszkiewicz Web Developer, Copyright &copy; 2017 </p>
 </footer>
 </body>
+
+@yield('scripts')
 
 <script>
 
